@@ -1,0 +1,55 @@
+main {
+    display: flex;
+}
+section {
+    width: 14vw;
+    height: 50vw;
+    border: black 2px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+p {
+    display: flex;
+    height: 10vw;
+    width: 10vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: red 2px solid;
+}
+
+#playerOneMarkerBox {
+    border: black 2px solid;
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    flex-wrap: wrap;
+}
+#playerTwoMarkerBox {
+    display: flex;
+    flex-direction: row; 
+    border: black 2px solid;
+    width: 50px;
+    flex-wrap: wrap;
+}
+.playerOneMarker {
+    margin: 1px;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 360%;
+}
+.playerTwoMarker {
+    margin: 1px;
+    background-color: lightcoral;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 360%;
+}
