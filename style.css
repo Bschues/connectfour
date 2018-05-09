@@ -6,8 +6,10 @@ section {
     height: 50vw;
     border: black 2px solid;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 p {
@@ -23,33 +25,35 @@ p {
     border: black 2px solid;
     display: flex;
     flex-direction: row;
-    width: 50px;
+    width: 100px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #playerTwoMarkerBox {
     display: flex;
     flex-direction: row; 
     border: black 2px solid;
-    width: 50px;
+    width: 100px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .playerOneMarker {
     margin: 1px;
     background-color: black;
-    width: 15px;
-    height: 15px;
+    width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    border-radius: 360%;
+    border-radius: 50%;
 }
 .playerTwoMarker {
     margin: 1px;
     background-color: lightcoral;
-    width: 15px;
-    height: 15px;
+    width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    border-radius: 360%;
+    border-radius: 50%;
 }
