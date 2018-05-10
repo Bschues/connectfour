@@ -36,7 +36,7 @@ piecedrop = function (event) {
 function win() {
     //Horizontal 
     let hasWon = false;
-    const columnEdge = board[0].length - 3;
+    let columnEdge = board[0].length - 3;
     
     for(let rowIndex = 0; rowIndex < board.length; rowIndex++){
         for(let columnIndex = 0; columnIndex < columnEdge; columnIndex++) {
@@ -84,13 +84,15 @@ function win() {
         }
     }
 }
-for(let rowIndex = 2; rowIndex < rowEdge; rowIndex++) {
-    for(let columnIndex = 0; columnIndex < columnEdge; columnIndex++) {
+//Diagonal Down Left
+columnEdge = board[0].length;
+for(let rowIndex = 0; rowIndex < rowEdge; rowIndex++) {
+    for(let columnIndex = 3; columnIndex < columnEdge; columnIndex++) {
         let cell = board[rowIndex][columnIndex];
         if(cell){
-            const cellIsSameAsOneOverAndBelow = cell === board[rowIndex - 1][columnIndex + 1];
-            const cellIsSameAsTwoOverAndBelow = cell === board[rowIndex - 2][columnIndex + 2];
-            const cellIsSameAsThreeOverAndBelow = cell === board[rowIndex - 3][columnIndex + 3];
+            const cellIsSameAsOneOverAndBelow = cell === board[rowIndex + 1][columnIndex - 1];
+            const cellIsSameAsTwoOverAndBelow = cell === board[rowIndex + 2][columnIndex - 2];
+            const cellIsSameAsThreeOverAndBelow = cell === board[rowIndex + 3][columnIndex - 3];
             if(cellIsSameAsOneOverAndBelow && cellIsSameAsTwoOverAndBelow && cellIsSameAsThreeOverAndBelow) {
                 console.log("Diagonal Down Left win");
                 hasWon = true;
