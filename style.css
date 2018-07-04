@@ -1,9 +1,9 @@
-main {
+#board {
     display: flex;
 }
 section {
-    width: 14vw;
-    height: 50vw;
+    width: 55px;
+    height: 350px;
     border: black 2px solid;
     display: flex;
     flex-direction: column-reverse;
@@ -12,10 +12,10 @@ section {
     align-items: center;
 
 }
-p {
+#info {
     display: flex;
-    height: 10vw;
-    width: 10vw;
+    height: fit-content;
+    width: fit-content;
     flex-direction: row;
     flex-wrap: wrap;
     border: red 2px solid;
@@ -25,19 +25,16 @@ p {
     border: black 2px solid;
     display: flex;
     flex-direction: row;
-    width: 100px;
-    flex-wrap: wrap;
     justify-content: center;
 }
 #playerTwoMarkerBox {
     display: flex;
     flex-direction: row; 
     border: black 2px solid;
-    width: 100px;
-    flex-wrap: wrap;
     justify-content: center;
 }
 .playerOneMarker {
+    display: flex;
     margin: 1px;
     background-color: black;
     width: 50px;
@@ -48,12 +45,12 @@ p {
     border-radius: 50%;
 }
 .playerTwoMarker {
+    display: flex;
     margin: 1px;
-    background-color: lightcoral;
+    background-color: red;
     width: 50px;
     height: 50px;
     display: flex;
-    flex-direction: column;
     border: 2px solid black;
     border-radius: 50%;
 }
